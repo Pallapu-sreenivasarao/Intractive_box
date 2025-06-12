@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Interactive BOGO Offer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h2>YAY! It's BOGO</h2>
+
+    <form id="offerForm">
+      <!-- Box 1 -->
+      <div class="box" data-units="1" onclick="selectBox(1)">
+        <div class="box-header">
+          <input type="radio" name="unit" value="1" />
+          <span>1 Unit <span class="tag">10% Off</span></span>
+          <span class="price">$10.00 USD <del>$24.00 USD</del></span>
+        </div>
+        <div class="box-content">
+          <div class="option-row">
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 2 -->
+      <div class="box" data-units="2" onclick="selectBox(2)">
+        <div class="most-popular">MOST POPULAR</div>
+        <div class="box-header">
+          <input type="radio" name="unit" value="2" />
+          <span>2 Unit <span class="tag">20% Off</span></span>
+          <span class="price">$18.00 USD <del>$24.00 USD</del></span>
+        </div>
+        <div class="box-content">
+          <div class="option-row">
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="option-row">
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <!-- Box 3 -->
+      <div class="box" data-units="3" onclick="selectBox(3)">
+        <div class="box-header">
+          <input type="radio" name="unit" value="3" />
+          <span>3 Unit <span class="tag">30% Off</span></span>
+          <span class="price">$24.00 USD <del>$24.00 USD</del></span>
+        </div>
+        <div class="box-content">
+          <div class="option-row">
+            <label>#1</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="option-row">
+            <label>#2</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+          <div class="option-row">
+            <label>#3</label>
+            <select>
+              <option>S</option>
+              <option>M</option>
+              <option>L</option>
+            </select>
+            <select>
+              <option>Black</option>
+              <option>White</option>
+              <option>Blue</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span class="free-delivery">Free Delivery</span>
+        <span class="total">Total : $<span id="totalPrice">0.00</span> USD</span>
+      </div>
+
+      <button type="button" class="add-to-cart">+ Add to Cart</button>
+      <p class="powered">© Created By Mr_Sreenivas</p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
